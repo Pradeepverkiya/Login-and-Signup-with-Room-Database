@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/pagename"
+            android:layout_width="wrap_content"
+            android:text="Sign Up"
+            android:textSize="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/button_color"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtFullName"
+            android:layout_width="match_parent"
+            android:hint="Full Name"
+            android:background="@drawable/editext_background"
+            android:layout_margin="20dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/pagename"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="50dp" />
+
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:hint="Email"
+            android:background="@drawable/editext_background"
+            android:layout_margin="20dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/edtFullName"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:hint="Password"
+            android:background="@drawable/editext_background"
+            android:layout_margin="20dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/edtEmail"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="50dp" />
+
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_below="@id/edtPassword"
+            android:layout_margin="30dp"
+            android:text="Sign up"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@color/button_color"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:onClick="goToLoinPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSignup"
+            android:layout_centerHorizontal="true"
+            android:text="Already Account ? Login here"/>
+    </RelativeLayout>
+
+</LinearLayout>
